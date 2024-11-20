@@ -32,6 +32,9 @@ def tsne_display(X, y, perplexity=30, learning_rate='auto', max_iter=None):
     plt.xlabel("Composante 1")
     plt.ylabel("Composante 2")
     
+    plt.savefig("tsne.png")
+
+
     plt.show()
     
 
@@ -60,5 +63,7 @@ def umap_display(X, y):
     plt.title("Visualisation avec UMAP")
     plt.xlabel("Composante 1")
     plt.ylabel("Composante 2")
+
+    plt.savefig("umap.png")
     
     plt.show()
